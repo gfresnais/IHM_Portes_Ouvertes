@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>choix_guide</ion-title>
+    <ion-title>Choix de guide</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+  <ion-item>
+    <ion-label>Sélectionnez un guide :</ion-label>
+    <ion-select value="Professeur">
+      <ion-select-option value="prof">Professeur</ion-select-option>
+      <ion-select-option value="etud">Etudiant</ion-select-option>
+      <ion-select-option value="virtual">Virtuel</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-card>
+
+<ion-button [routerLink]="['/valider-visite/']">Valider</ion-button>
 
 </ion-content>
