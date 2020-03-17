@@ -5,12 +5,17 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   {
+<<<<<<< Updated upstream
     path: 'valider-visite',
     loadChildren: () => import('./valider-visite/valider-visite.module').then( m => m.ValiderVisitePageModule)
   },
   {
     path: 'mon-itineraire',
     loadChildren: () => import('./mon-itineraire/mon-itineraire.module').then( m => m.MonItinerairePageModule)
+=======
+    path: 'faq',
+    loadChildren: () => import('./faq/faq.module').then( m => m.FAQPageModule)
+>>>>>>> Stashed changes
   },
 ];
 
