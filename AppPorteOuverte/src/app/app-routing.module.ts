@@ -24,6 +24,10 @@ import { NgModule } from '@angular/core';
     path: 'personnaliser-visite',
     loadChildren: () => import('./personnaliser-visite/personnaliser-visite.module').then( m => m.PersonnaliserVisitePageModule)
   },
+  {
+    path: 'se-reperer',
+    loadChildren: () => import('./se-reperer/se-reperer.module').then( m => m.SeRepererPageModule)
+  },
 ];
 
 @NgModule({
