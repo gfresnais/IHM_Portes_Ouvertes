@@ -17,6 +17,10 @@ const routes: Routes = [
     loadChildren: () => import('./faq/faq.module').then( m => m.FAQPageModule)
 >>>>>>> Stashed changes
   },
+  {
+    path: 'personnaliser-visite',
+    loadChildren: () => import('./personnaliser-visite/personnaliser-visite.module').then( m => m.PersonnaliserVisitePageModule)
+  },
 ];
 
 @NgModule({
