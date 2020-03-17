@@ -20,6 +20,10 @@ import { NgModule } from '@angular/core';
             path: 'renseignement',
             loadChildren: () => import('./renseignement/renseignement.module').then( m => m.RenseignementPageModule)
         },
+  {
+    path: 'personnaliser-visite',
+    loadChildren: () => import('./personnaliser-visite/personnaliser-visite.module').then( m => m.PersonnaliserVisitePageModule)
+  },
 ];
 
 @NgModule({
