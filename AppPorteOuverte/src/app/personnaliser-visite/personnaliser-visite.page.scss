@@ -6,3 +6,21 @@
     align-content: center;
     width:50%;
 }
+
+.contenu-card {
+     display: flex;
+     flex-flow: column;
+     line-height: 10px
+ }
+
+ .Atelier-title {
+     font-size: 16px;
+ }
+  .Atelier-emplacem {
+      font-size: 10px;
+      opacity: 0.5;
+  }
+
+   .Atelier-descrip {
+       font-size: 10px;
+   }
