@@ -1,7 +1,7 @@
 export class info {
     question:string;
     reponse:string;
-    categorie:cate;
+    categorie:string;
 }
 
 export class cate {
