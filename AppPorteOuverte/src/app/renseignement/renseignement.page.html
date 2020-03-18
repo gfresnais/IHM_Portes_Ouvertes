@@ -1,30 +1,69 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>renseignement</ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-side-menu side="left">
-    <ion-content class="has-expanded-header">
-      <ion-list>
-        <ion-item nav-clear menu-close class="item-icon-left" ui-sref="main.dashboard">
-          <i class="icon ion-ios-speedometer"> </i>
-          Dashboard
-        </ion-item>
-        <ion-item nav-clear menu-close class="item-icon-left item-icon-right" ui-sref="main.accounts">
-          <i class="icon ion-accounts ion-ios-arrow-right"> </i>
-          Accounts
-        </ion-item>
-        <ion-item nav-clear menu-close class="item-icon-left" ui-sref="main.accounts">
-          <i class="icon ion-accounts"> </i>
-          sub Accounts 1
-        </ion-item>
-        <ion-item nav-clear menu-close class="item-icon-left" ui-sref="main.accounts">
-          <i class="icon ion-accounts"> </i>
-          sub Accounts 2
-        </ion-item>
-      </ion-list>
-    </ion-content>
-    </ion-side-menus>
+  <ion-list inset="true">
+    <ion-item>
+      <ion-label>Pokémon Yellow</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mega Man X</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>The Legend of Zelda</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pac-Man</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Super Mario World</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- List of Input Items -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Input</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Toggle</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-label>Radio</ion-label>
+      <ion-radio slot="end"></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>Checkbox</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <!-- List of Sliding Items -->
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
