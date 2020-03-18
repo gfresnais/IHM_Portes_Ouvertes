@@ -1,28 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Component } from '@angular/core';
 import { Map, latLng, tileLayer, Layer, marker } from 'leaflet';
+
 @Component({
-  selector: 'app-se-reperer',
-  templateUrl: './se-reperer.page.html',
-  styleUrls: ['./se-reperer.page.scss'],
+  selector: 'app-tab1',
+  templateUrl: 'tab1.page.html',
+  styleUrls: ['tab1.page.scss']
 })
-export class SeRepererPage implements OnInit {
-
-
-  ngOnInit() {
-  }
-
+export class Tab1Page {
   map: Map;
-  pickupLocation: string;
-  constructor(private router:Router) {}
-  onpickupClick(){
-    this.router.navigate(['./pickup-location']);
-  }
+
   ionViewDidEnter() { this.leafletMap(); }
 
   leafletMap() {
     // In setView add latLng and zoom
-    this.map = new Map('mapId').setView([39.9075000, 116.3972300], 10);
+    this.map = new Map('mapId').setView([28.644800, 77.216721], 10);
     tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'edupala.com © ionic LeafLet',
     }).addTo(this.map);
@@ -37,6 +28,4 @@ export class SeRepererPage implements OnInit {
   ionViewWillLeave() {
     this.map.remove();
   }
-
 }
-
