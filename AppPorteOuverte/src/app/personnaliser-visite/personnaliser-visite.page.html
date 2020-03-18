@@ -6,24 +6,68 @@
 
 <ion-content>
 
-  
-  <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Salle TD4</ion-card-subtitle>
-      <ion-card-title>Atelier 1 : Intelligence artificielle</ion-card-title>
-    </ion-card-header>
+  <ion-slides pager="false" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Salle TD4</ion-card-subtitle>
+          <ion-card-title>Atelier 1 : Intelligence artificielle</ion-card-title>
+        </ion-card-header>
 
-    <ion-card-content>
-      Description : L’intelligence artificielle est un ensemble des théories
-      et des techniques développant des programmes informatiques simulant
-      certains traits de l'intelligence humaine. Dans cette atelier vous aurez
-      l’opportunité de voir les différents projets réalisés par les étudiants
-      des différents niveaux sur l’intelligence artificielle.
-    </ion-card-content>
+        <ion-card-content>
 
-    <ion-button>Ajouter à la visite</ion-button>
+          Description : L’intelligence artificielle est un ensemble des théories
+          et des techniques développant des programmes informatiques simulant
+          certains traits de l'intelligence humaine. Dans cette atelier vous aurez
+          l’opportunité de voir les différents projets réalisés par les étudiants
+          des différents niveaux sur l’intelligence artificielle.
+        </ion-card-content>
 
-  </ion-card>
+        <ion-button>Ajouter à la visite</ion-button>
+
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Salle C03</ion-card-subtitle>
+          <ion-card-title>Atelier 2 : La vie assosiative</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+
+          Description : La vie associative est un volet important dans la vie
+          estudiantine, elle est là pour enrichir et compléter la formation des
+          ingenieurs de demain. Dans cette atelier les associations de l’ENSIM
+          seront présentes pour vous présenter leurs activités, et leurs travaux réalisés.
+        </ion-card-content>
+
+        <ion-button>Ajouter à la visite</ion-button>
+
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Salle TP4</ion-card-subtitle>
+          <ion-card-title>Atelier 3 : Réalité virtuelle</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+
+          Description : Réalité virtuelle technique simulant un environnement en trois dimensions
+          à l'aide d'un ordinateur ; le monde ainsi créé. Dans cet atelier, les travaux réalisés par
+          les étudiants de l’ENSIM en réalité virtuelle vont vous être exposés. Vous pouvez même en
+          essayer quelques uns.
+        </ion-card-content>
+
+        <ion-button>Ajouter à la visite</ion-button>
+
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
 
 
 
@@ -33,7 +77,7 @@
     <ion-item href="#" class="ion-activated">
 
       <ion-label>Atelier 1</ion-label>
-      <ion-button fill="outline" slot="end">
+      <ion-button color="success" slot="end">
         Supprimer
       </ion-button>
       <br>
@@ -52,7 +96,7 @@
     <ion-item href="#" class="ion-activated">
 
     <ion-label>Atelier 2</ion-label>
-    <ion-button fill="outline" slot="end">
+    <ion-button color="success" slot="end">
       Supprimer
     </ion-button>
     <br>
@@ -69,7 +113,7 @@
     <ion-item href="#" class="ion-activated">
 
       <ion-label>Atelier 4</ion-label>
-      <ion-button fill="outline" slot="end">
+      <ion-button color="success" slot="end">
         Supprimer
       </ion-button>
       <br>
@@ -83,6 +127,6 @@
     </ion-item>
   </ion-card>
 
-  <ion-button>Valider</ion-button>
+  <ion-button id="Valider_personnaliser_visite">Valider</ion-button>
 
 </ion-content>
