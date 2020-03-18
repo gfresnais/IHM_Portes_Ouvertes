@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { RenseignementPageRoutingModule } from './renseignement-routing.module';
 
 import { RenseignementPage } from './renseignement.page';
+import { ExpandableComponent } from "../components/expandable/expandable.component";
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { RenseignementPage } from './renseignement.page';
     IonicModule,
     RenseignementPageRoutingModule
   ],
-  declarations: [RenseignementPage]
+  declarations: [RenseignementPage, ExpandableComponent]
 })
 export class RenseignementPageModule {}
