@@ -1,0 +1,53 @@
+body {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#container {
+    padding: 10%;
+}
+
+.button-custom {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.guide {
+    background: #FFFFFF;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.titre-guide {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+}
+
+.contenu-guide, .temps {
+    color: #707683;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
