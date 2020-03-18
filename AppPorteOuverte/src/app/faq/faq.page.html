@@ -8,13 +8,15 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let infos of listInfo;">
-    <ion-card-title>{{infos.categorie}}</ion-card-title>
-  
-    <ion-text><b>{{infos.question}}</b></ion-text>
-    <br/>
-    <ion-text>{{infos.reponse}}</ion-text>
-
+  <ion-card *ngFor="let cat of listCate;">
+    <ion-card-title>{{cat.categorie}}</ion-card-title>
+    <ion-card *ngFor="let infos of listInfo;">
+      <div *ngIf="infos.categorie == cat.categorie">
+        <ion-text><b>{{infos.question}}</b></ion-text>
+        <br/>
+        <ion-text>{{infos.reponse}}</ion-text>
+      </div> 
+    </ion-card>
   </ion-card>
   
 </ion-content>
