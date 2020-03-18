@@ -1,0 +1,37 @@
+body {
+    background: #E5E5E5;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
+
+#container {
+    padding: 10%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.terminer, .visite, .a-visiter {
+    border-radius: 4px;
+}
+
+.terminer, .visite {
+    background: #2ED47A;
+}
+
+.a-visiter {
+    background: #E4E4E4;
+}
+
+.buttons, .card-content {
+    display: flex;
+    flex-flow: column;
+}
+
+.hidden {
+    display: none !important;
+}
