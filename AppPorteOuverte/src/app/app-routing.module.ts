@@ -32,6 +32,10 @@ loadChildren: () => import('./se-reperer/se-reperer.module').then( m => m.SeRepe
 path: 'choix-guide',
 loadChildren: () => import('./choix-guide/choix-guide.module').then( m => m.ChoixGuidePageModule)
 },
+  {
+    path: 'burger-menu',
+    loadChildren: () => import('./burger-menu/burger-menu.module').then( m => m.BurgerMenuPageModule)
+  },
 
 ];
 
