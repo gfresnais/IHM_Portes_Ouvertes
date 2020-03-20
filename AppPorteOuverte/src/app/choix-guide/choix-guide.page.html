@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Choix de guide</ion-title>
+    <ion-title class="titre-page">Choix de guide</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -11,13 +11,13 @@
   <div id="container">
   <ion-item>
     <ion-label>Sélectionnez :</ion-label>
-    <ion-select interface="popover" value="Professeur">
+    <ion-select interface="popover" placeholder="Professeur" #Selection>
       <ion-select-option value="prof">Professeur</ion-select-option>
       <ion-select-option value="etud">Etudiant</ion-select-option>
       <ion-select-option value="virtual">Virtuel</ion-select-option>
     </ion-select>
   </ion-item>
 
-<ion-button [routerLink]="['/valider-visite/']">Valider</ion-button>
+<ion-button id="button-container" [routerLink]="['/valider-visite/',Selection.value]">VALIDER LE GUIDE</ion-button>
 </div>
 </ion-content>

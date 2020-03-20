@@ -7,11 +7,17 @@ body {
 }
 
 #container {
-    padding: 10%;
+    margin-top: 2%;
+    padding: 5%;
+    text-align: center;
 }
 
-.ion-button {
-    float : center;
-   
+#button-container {
+    margin-top: 90%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 13px;
 }
 
