@@ -8,10 +8,6 @@ import { MenuController } from '@ionic/angular';
 })
 export class BurgerMenuPage {
 
-constructor(private menu: MenuController) { }
+constructor() { }
 
-  openFirst() {
-    this.menu.enable(true, 'first');
-    this.menu.open('first');
-  }
 }
