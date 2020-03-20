@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-personnaliser-visite',
     templateUrl: './personnaliser-visite.page.html',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonnaliserVisitePage implements OnInit {
 
-  constructor() { }
+
+
+  constructor() {}
 
   ngOnInit() {
   }
+
 
 }

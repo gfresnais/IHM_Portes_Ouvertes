@@ -35,10 +35,12 @@ loadChildren: () => import('./choix-guide/choix-guide.module').then( m => m.Choi
   {
     path: 'burger-menu',
     loadChildren: () => import('./burger-menu/burger-menu.module').then( m => m.BurgerMenuPageModule)
-  },  {
+  },
+  {
     path: 'pickup-location',
     loadChildren: () => import('./pickup-location/pickup-location.module').then( m => m.PickupLocationPageModule)
   },
+
 
 
 ];

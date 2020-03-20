@@ -45,6 +45,7 @@
           estudiantine, elle est là pour enrichir et compléter la formation des
           ingenieurs de demain. Dans cette atelier les associations de l’ENSIM
           seront présentes pour vous présenter leurs activités, et leurs travaux réalisés.
+          <br><br>
         </ion-card-content>
 
         <ion-button>Ajouter à la visite</ion-button>
@@ -64,6 +65,7 @@
           à l'aide d'un ordinateur ; le monde ainsi créé. Dans cet atelier, les travaux réalisés par
           les étudiants de l’ENSIM en réalité virtuelle vont vous être exposés. Vous pouvez même en
           essayer quelques uns.
+          <br><br><br>
         </ion-card-content>
 
         <ion-button>Ajouter à la visite</ion-button>
@@ -136,7 +138,7 @@
 
     </ion-item>
   </ion-card>
-
-  <ion-button id="Valider_personnaliser_visite">Valider</ion-button>
-
+  <div id="Valider_personnaliser_visite">
+  <ion-button  [routerLink]="['/choix-guide']">Valider</ion-button>
+  </div>
 </ion-content>
