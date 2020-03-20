@@ -6,7 +6,7 @@ templateUrl: "./expandable.component.html",
 styleUrls: ["./expandable.component.scss"]
 })
 export class ExpandableComponent implements AfterViewInit {
-@ViewChild("expandWrapper", { read: ElementRef,static:true }) expandWrapper: ElementRef;
+@ViewChild("expandWrapper", { read: ElementRef, static: true }) expandWrapper: ElementRef;
 @Input("expanded") expanded: boolean = false;
 @Input("expandHeight") expandHeight: string = "150px";
 

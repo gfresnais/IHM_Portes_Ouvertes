@@ -9,7 +9,6 @@ body {
 }
 
 #container {
-    padding: 10%;
     background: #FFFFFF;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
@@ -17,6 +16,7 @@ body {
 
 .terminer, .visite, .a-visiter {
     border-radius: 4px;
+    color: inherit;
 }
 
 .terminer, .visite {
@@ -30,8 +30,4 @@ body {
 .buttons, .card-content {
     display: flex;
     flex-flow: column;
-}
-
-.hidden {
-    display: none !important;
 }

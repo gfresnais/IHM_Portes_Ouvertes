@@ -28,6 +28,7 @@
     "@ionic/angular": "^5.0.0",
     "@types/google-maps": "^3.2.2",
     "@types/leaflet": "^1.5.11",
+    "cordova-plugin-geolocation": "^4.0.2",
     "core-js": "^2.5.4",
     "leaflet": "^1.6.0",
     "rxjs": "~6.5.1",
@@ -59,5 +60,10 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-geolocation": {}
+    }
+  }
 }
