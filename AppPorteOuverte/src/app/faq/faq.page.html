@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>FAQ</ion-title>
+    <ion-title class="titre-page">FAQ</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -9,7 +9,7 @@
 
 <ion-content>
 
-  <ion-card *ngFor="let cat of listCate;">
+  <ion-card class="card" *ngFor="let cat of listCate;">
     <ion-card-title>{{cat.categorie}}<br/><br/></ion-card-title>
     <div *ngFor="let infos of listInfo;">
       <div *ngIf="infos.categorie == cat.categorie">
