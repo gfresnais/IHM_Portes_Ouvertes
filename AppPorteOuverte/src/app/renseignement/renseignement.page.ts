@@ -25,11 +25,10 @@ public items: any = [];
       item.expanded = true;
     }
   }
+}
 
-  public class item {
+export class item {
 
-  public title:string
+  public title:string;
 
   }
-
-}
