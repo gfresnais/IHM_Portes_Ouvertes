@@ -10,24 +10,29 @@
 <ion-content>
     <ion-card (click)="expandItem(info)" *ngFor="let info of infos">
         <ion-card-header>
-            <ion-card-title>{{ info.titre }}</ion-card-title>
+            <ion-card-title class="titre-card">{{ info.titre }}</ion-card-title>
+
         </ion-card-header>
 
         <ion-card-content>
             <app-expandable expandHeight="400px" [expanded]="info.expanded">
                 <ion-item>
-                    <a href="">{{info.lien1}}</a>
+                    <a href=""><p>{{info.lien1}}</p></a>
                 </ion-item>
                 <ion-item>
-                    <a href="">{{info.lien2}}</a>
+                    <a href=""><p>{{info.lien2}}</p></a>
                 </ion-item>
                 <ion-item>
-                    <a href="">{{info.lien3}}</a>
+                    <a href=""><p>{{info.lien3}}</p></a>
                 </ion-item>
                 <ion-item>
-                    <a href="">{{info.lien4}}</a>
+                    <a href=""><p>{{info.lien4}}</p></a>
                 </ion-item>
             </app-expandable>
         </ion-card-content>
     </ion-card>
+    <ion-button class="button-custom" color="primary">FAQ</ion-button>
+    <ion-button class="button-custom" color="primary">
+        POSER DES<br>QUESTION A UN<br>ELEVE
+    </ion-button>
 </ion-content>
