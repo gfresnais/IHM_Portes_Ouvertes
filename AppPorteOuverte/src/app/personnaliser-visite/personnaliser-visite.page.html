@@ -1,13 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Personnaliser la visite</ion-title>
     <ion-buttons>
       <ion-back-button></ion-back-button>
+      <ion-title>Personnaliser la visite</ion-title>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <h4>  Sélectionner un Atelier </h4>
 
   <ion-slides pager="false" [options]="slideOpts">
     <ion-slide>
@@ -31,6 +32,7 @@
       </ion-card>
     </ion-slide>
     <ion-slide>
+
       <ion-card>
         <ion-card-header>
           <ion-card-subtitle>Salle C03</ion-card-subtitle>
@@ -71,7 +73,7 @@
 
   </ion-slides>
 
-
+  <h4>  Ma visite </h4>
 
 
   
@@ -80,12 +82,21 @@
     <ion-item href="#" class="ion-activated">
 
       <div class="contenu-card">
-        <p class="Atelier-title">Atelier 1</p>
-        <p class="Atelier-emplacem">1er étage</p>
-        <p class="Atelier-descrip">Présentation des projets de réalité virtuelle</p></div>
-      <ion-button color="success" slot="end">
-        Supprimer
-      </ion-button>
+        <table class="contenu-card">
+          <tr>
+            <td class="Atelier-title">Atelier 1</td>
+            <td class="supprimer-button" rowspan=3>
+              <ion-button color="success" slot="end" >
+                Supprimer
+            </ion-button>
+            </td>
+          </tr>
+          <tr><td class="Atelier-emplacem">1er étage</td></tr>
+          <tr><td class="Atelier-descrip">Présentation des projets de réalité virtuelle</td></tr>
+        </table>
+      </div>
+
+
 
 
 
@@ -95,7 +106,7 @@
     <ion-item href="#" class="ion-activated">
 
     <ion-label>Atelier 2</ion-label>
-    <ion-button color="success" slot="end">
+    <ion-button color="success" slot="end" class="supprimer-button">
       Supprimer
     </ion-button>
     <br>
@@ -112,7 +123,7 @@
     <ion-item href="#" class="ion-activated">
 
       <ion-label>Atelier 4</ion-label>
-      <ion-button color="success" slot="end">
+      <ion-button color="success" slot="end" class="supprimer-button">
         Supprimer
       </ion-button>
       <br>

@@ -10,17 +10,40 @@
 .contenu-card {
      display: flex;
      flex-flow: column;
-     line-height: 10px
+     line-height: 10px;
+
  }
 
  .Atelier-title {
      font-size: 16px;
+     padding-bottom: 5px;
+     padding-top: 0px;
+     margin: 0px;
+
  }
   .Atelier-emplacem {
       font-size: 10px;
       opacity: 0.5;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin: 0px;
   }
 
    .Atelier-descrip {
        font-size: 10px;
+       padding-bottom: 5px;
+       padding-top: 5px;
+       margin: 0px;
+   }
+
+   .supprimer-button {
+        padding-right: 5%;
+        padding-left: 5%;
+        margin-left : 1%;
+        color: red;
+
+   }
+
+   .ion-activated{
+        align: center;
    }
