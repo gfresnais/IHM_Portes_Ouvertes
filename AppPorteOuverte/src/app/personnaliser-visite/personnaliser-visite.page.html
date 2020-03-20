@@ -76,68 +76,44 @@
   </ion-slides>
 
   <h4>  Ma visite </h4>
+  <div class="maVisite">
+    <ion-card>
+  <div class="contenu-card">
+      <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
+          Supprimer
+      </ion-button>
+        <p class="Atelier-title">Atelier 1</p>
+        <p class="Atelier-emplacem">1er étage</p>
+        <p class="Atelier-descrip">Présentation des projets de réalité virtuelle</p>
 
-
-  
-
-  <ion-card>
-    <ion-item href="#" class="ion-activated">
-
-      <div class="contenu-card">
-        <table class="contenu-card">
-          <tr>
-            <td class="Atelier-title">Atelier 1</td>
-            <td class="supprimer-button" rowspan=3>
-              <ion-button color="success" slot="end" >
-                Supprimer
-            </ion-button>
-            </td>
-          </tr>
-          <tr><td class="Atelier-emplacem">1er étage</td></tr>
-          <tr><td class="Atelier-descrip">Présentation des projets de réalité virtuelle</td></tr>
-        </table>
-      </div>
-
-
-
-
-
-
-    </ion-item>
-
-    <ion-item href="#" class="ion-activated">
-
-    <ion-label>Atelier 2</ion-label>
-    <ion-button color="success" slot="end" class="supprimer-button">
+  </div>
+    </ion-card>
+      <ion-card>
+  <div class="contenu-card">
+    <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
       Supprimer
     </ion-button>
-    <br>
-    <h6>
-      Rez-de-chaussée
-    </h6>
-    <br>
-    <p>
-      Présentation de l’école et du protocole d’admission
-    </p>
+    <p class="Atelier-title">Atelier 2</p>
+    <p class="Atelier-emplacem">Rez-de-chaussée</p>
+    <p class="Atelier-descrip">Présentation de l’école et du protocole d’admission</p>
 
-  </ion-item>
+  </div>
+      </ion-card>
+    <ion-card>
+  <div class="contenu-card">
+    <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
+      Supprimer
+    </ion-button>
+    <p class="Atelier-title">Atelier 4</p>
+    <p class="Atelier-emplacem">1er étage</p>
+    <p class="Atelier-descrip">Présentation des projets de deuxième année</p>
 
-    <ion-item href="#" class="ion-activated">
+  </div>
+    </ion-card>
+  </div>
 
-      <ion-label>Atelier 4</ion-label>
-      <ion-button color="success" slot="end" class="supprimer-button">
-        Supprimer
-      </ion-button>
-      <br>
-      <h6>
-        1er étage
-      </h6>
-      <br>
-      <p>
-        Présentation des projets de deuxième année      </p>
 
-    </ion-item>
-  </ion-card>
+  <br><br><br>
   <div id="Valider_personnaliser_visite">
   <ion-button  [routerLink]="['/choix-guide']">Valider</ion-button>
   </div>

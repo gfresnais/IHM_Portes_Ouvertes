@@ -6,11 +6,17 @@
 }
 
 .contenu-card {
-     display: flex;
-     flex-flow: column;
-     line-height: 10px;
+  width: 100%
+}
 
- }
+.contenu-card p {
+   width: 65%;
+}
+
+.button-supprimer {
+  width: 35%;
+  float : right;
+}
 
  .Atelier-title {
      font-size: 16px;
@@ -45,3 +51,5 @@
    .ion-activated{
         align: center;
    }
+
+
