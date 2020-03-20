@@ -10,57 +10,21 @@
 <ion-content>
   <div id="container">
     <h1>Mon itinéraire</h1>
-    <ion-card>
+    
+    <ion-card *ngFor="let card of listCards">
       <ion-card-header>
-        <ion-card-title>TD1 Réamix</ion-card-title>
-        <ion-card-subtitle>1er étage</ion-card-subtitle>
+        <ion-card-title>{{card.titre}}</ion-card-title>
+        <ion-card-subtitle>{{card.sous_titre}}</ion-card-subtitle>
       </ion-card-header>
 
       <ion-card-content>
         <ion-item>
           <div class="card-content">
-            <p>Présentation des projets de réalité virtuelle</p>
+            <p>{{card.description}}</p>
             <ion-buttons class="buttons">
-              <ion-button class="visite">Visité</ion-button>
-              <ion-button class="terminer hidden">Terminer</ion-button>
-            </ion-buttons>
-          </div>
-        </ion-item>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>C03 Présentation de l'école</ion-card-title>
-        <ion-card-subtitle>Rez-de-chaussée</ion-card-subtitle>
-      </ion-card-header>
-
-      <ion-card-content>
-        <ion-item>
-          <div class="card-content">
-            <p>Présentation de l'école et du protocole d'admission</p>
-            <ion-buttons class="buttons">
-              <ion-button class="a-visiter">A visiter</ion-button>
-              <ion-button class="terminer">Terminer</ion-button>
-            </ion-buttons>
-          </div>
-        </ion-item>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>TD4 Projet 2A</ion-card-title>
-        <ion-card-subtitle>1er étage</ion-card-subtitle>
-      </ion-card-header>
-
-      <ion-card-content>
-        <ion-item>
-          <div class="card-content">
-            <p>Présentation des projets de deuxième année</p>
-            <ion-buttons class="buttons">
-              <ion-button class="a-visiter">A visiter</ion-button>
-              <ion-button class="terminer">Terminer</ion-button>
+              <ion-button class="visite" *ngIf="card.visite == true">Visité</ion-button>
+              <ion-button class="visite" *ngIf="card.visite == false">A visiter</ion-button>
+              <ion-button [className]="card.visite == true ? 'hidden' : ''" class="terminer">Terminer</ion-button>
             </ion-buttons>
           </div>
         </ion-item>
