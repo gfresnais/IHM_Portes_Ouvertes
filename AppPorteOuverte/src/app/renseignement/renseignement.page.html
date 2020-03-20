@@ -1,37 +1,22 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Renseignement</ion-title>
-    <ion-buttons>
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-back-button></ion-back-button>
+            <ion-title class="titre-page">Renseignement</ion-title>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-card (click)="expandItem(item)" *ngFor="let item of items">
+    <ion-card (click)="expandItem(info)" *ngFor="let info of infos">
         <ion-card-header>
-            <ion-card-title>My Neighbor Totoro</ion-card-title>
+            <ion-card-title>{{ info.title }}</ion-card-title>
         </ion-card-header>
 
         <ion-card-content>
-            <app-expandable expandHeight="100px" [expanded]="item.expanded">
+            <app-expandable expandHeight="100px" [expanded]="info.expanded" *ngFor="let elmt of info.list">
                 <p>
-                    Hello there.
-                </p>
-                <p>
-                    Hello there.
-                </p>
-                <p>
-                    Hello there.
-                </p>
-                <p>
-                    Hello there.
-                </p>
-                <p>
-                    Hello there.
-                </p>
-                <p>
-                    Hello there.
+                    {{elmt}}
                 </p>
             </app-expandable>
         </ion-card-content>
