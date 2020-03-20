@@ -13,8 +13,7 @@
     <ion-card-title>{{cat.categorie}}<br/><br/></ion-card-title>
     <div *ngFor="let infos of listInfo;">
       <div *ngIf="infos.categorie == cat.categorie">
-        <ion-card-subtitle>{{infos.question}}</ion-card-subtitle>
-        <ion-text>{{infos.reponse}}</ion-text><br/><br/> 
+        <ion-text><b>{{infos.question}}</b><br/>{{infos.reponse}}</ion-text><br/><br/> 
       </div>
     </div>
   </ion-card>
