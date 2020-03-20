@@ -10,14 +10,23 @@
 <ion-content>
     <ion-card (click)="expandItem(info)" *ngFor="let info of infos">
         <ion-card-header>
-            <ion-card-title>{{ info.title }}</ion-card-title>
+            <ion-card-title>{{ info.titre }}</ion-card-title>
         </ion-card-header>
 
         <ion-card-content>
-            <app-expandable expandHeight="100px" [expanded]="info.expanded" *ngFor="let elmt of info.list">
-                <p>
-                    {{elmt}}
-                </p>
+            <app-expandable expandHeight="400px" [expanded]="info.expanded">
+                <ion-item>
+                    <a href="">{{info.lien1}}</a>
+                </ion-item>
+                <ion-item>
+                    <a href="">{{info.lien2}}</a>
+                </ion-item>
+                <ion-item>
+                    <a href="">{{info.lien3}}</a>
+                </ion-item>
+                <ion-item>
+                    <a href="">{{info.lien4}}</a>
+                </ion-item>
             </app-expandable>
         </ion-card-content>
     </ion-card>

@@ -8,37 +8,34 @@ import { Component } from '@angular/core';
 })
 export class RenseignementPage {
 
-  public infos: Info[];
-  public i1: Info;
-  public i2: Info;
-  public i3: Info;
+  public infos: Info[] = [
+    {
+      titre: "Informations sur l'école",
+      expendable: false,
+      lien1: "Dépliant de l'école",
+      lien2: "Dépliant du concours Geipi Plytech",
+      lien3: "Dépliant cycle ingénieur",
+      lien4: "Dépliant Khâgne",
+    },
+    {
+      titre: "Informations sur l'école",
+      expendable: false,
+      lien1: "Dépliant de l'école",
+      lien2: "Dépliant du concours Geipi Plytech",
+      lien3: "Dépliant cycle ingénieur",
+      lien4: "Dépliant Khâgne",
+    },
+    {
+      titre: "Informations sur l'école",
+      expendable: false,
+      lien1: "Dépliant de l'école",
+      lien2: "Dépliant du concours Geipi Plytech",
+      lien3: "Dépliant cycle ingénieur",
+      lien4: "Dépliant Khâgne",
+    },
+  ]
 
-  constructor() {
-
-    this.i1.title = "Information sur l'école";
-    this.i1.list = [
-      "Dépliant de l'école",
-      "Dépliant du concours Geipei Polytech",
-      "Dépliant cycle ingénieur",
-      "Dépliant Khâgne"
-    ];
-    this.i2.title = "Information sur l'école";
-    this.i2.list = [
-      "Dépliant de l'école",
-      "Dépliant du concours Geipei Polytech",
-      "Dépliant cycle ingénieur",
-      "Dépliant Khâgne"
-    ];
-    this.i3.title = "Information sur l'école";
-    this.i3.list = [
-      "Dépliant de l'école",
-      "Dépliant du concours Geipei Polytech",
-      "Dépliant cycle ingénieur",
-      "Dépliant Khâgne"
-    ];
-
-    this.infos = [this.i1, this.i2, this.i3];
-  }
+  constructor() {  }
 
   expandItem(info): void {
     if (info.expanded) {
@@ -50,7 +47,10 @@ export class RenseignementPage {
 }
 
 export class Info {
-  public title: string = "titre";
-  public expendable: boolean = false;
-  public list: string[];
+  public titre: string;
+  public expendable: boolean;
+  public lien1: string;
+  public lien2: string;
+  public lien3: string;
+  public lien4: string;
   }
