@@ -9,28 +9,20 @@
       <ion-content>
         <ion-list>
           <ion-item>
-            <ion-icon name="mail" slot="start"></ion-icon>
-            <ion-label>Inbox</ion-label>
+            <ion-icon name="clipboard" slot="start"></ion-icon>
+            <ion-label [routerLink]="['/personnaliser-visite']">Organiser ma visite</ion-label>
           </ion-item>
           <ion-item>
-            <ion-icon name="paper-plane" slot="start"></ion-icon>
-            <ion-label>Outbox</ion-label>
+            <ion-icon name="book" slot="start"></ion-icon>
+            <ion-label [routerLink]="['/renseignement']">Renseignements</ion-label>
           </ion-item>
           <ion-item>
-            <ion-icon name="heart" slot="start"></ion-icon>
-            <ion-label>Favorites</ion-label>
+            <ion-icon name="compass" slot="start"></ion-icon>
+            <ion-label [routerLink]="['/se-reperer']">Me repérer</ion-label>
           </ion-item>
           <ion-item>
-            <ion-icon name="archive" slot="start"></ion-icon>
-            <ion-label>Archived</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-icon name="trash" slot="start"></ion-icon>
-            <ion-label>Trash</ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-icon name="warning" slot="start"></ion-icon>
-            <ion-label>Spam</ion-label>
+            <ion-icon name="chatbubbles" slot="start"></ion-icon>
+            <ion-label [routerLink]="['/faq']" >FAQ</ion-label>
           </ion-item>
         </ion-list>
       </ion-content>
