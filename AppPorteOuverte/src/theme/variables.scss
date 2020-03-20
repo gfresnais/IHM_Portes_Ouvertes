@@ -222,8 +222,13 @@
 
     --ion-item-background: #1A1B1E;
   }
+}
 
-  ion-title.title-large {
-    --color: white;
-  }
+
+ion-title.title-large {
+  --color: white;
+}
+
+ion-card.card {
+  padding: 10px;
 }
