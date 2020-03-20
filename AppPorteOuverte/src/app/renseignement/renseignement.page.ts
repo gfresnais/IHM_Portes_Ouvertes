@@ -15,12 +15,6 @@ public items: any = [];
       { expanded: false },
       { expanded: false },
       { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false },
-      { expanded: false }
     ];
   }
 
@@ -28,14 +22,14 @@ public items: any = [];
     if (item.expanded) {
       item.expanded = false;
     } else {
-      this.items.map(listItem => {
-        if (item == listItem) {
-          listItem.expanded = !listItem.expanded;
-        } else {
-          listItem.expanded = false;
-        }
-        return listItem;
-      });
+      item.expanded = true;
     }
   }
+
+  public class item {
+
+  public title:string
+
+  }
+
 }
