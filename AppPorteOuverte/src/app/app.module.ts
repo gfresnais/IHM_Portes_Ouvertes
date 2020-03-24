@@ -9,11 +9,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
-
+import { IonicSelectableModule } from 'ionic-selectable';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,IonicSelectableModule],
   providers: [
     StatusBar,
     SplashScreen,

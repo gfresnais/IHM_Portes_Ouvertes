@@ -7,13 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { SeRepererPageRoutingModule } from './se-reperer-routing.module';
 
 import { SeRepererPage } from './se-reperer.page';
-
+import { IonicSelectableModule } from 'ionic-selectable';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SeRepererPageRoutingModule
+    SeRepererPageRoutingModule,
+    IonicSelectableModule
   ],
   declarations: [SeRepererPage]
 })

@@ -1,14 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Access Location
-    </ion-title>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-title class="titre-page">Se reperer</ion-title>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   
   <div id="myMap" style="height:80%;width: 100%;"></div>
   <ion-button (click)="getPositions()">
-    click me
+    Où suis-je
   </ion-button>
+  <ion-item>
+    <ion-label>Chercher un lieu</ion-label>
+    
+    <ion-select value="brown" okText="Ok" cancelText="Anuler" (ionChange)="locate($event)">
+      <ion-searchbar showCancelButton="focus"></ion-searchbar>
+      <ion-select-option value="ENSIM">ENSIM</ion-select-option>
+      <ion-select-option value="IUT">IUT</ion-select-option>
+      <ion-select-option value="EVE">EVE</ion-select-option>
+      <ion-select-option value="RU_Bartholdi">RU Bartholdi</ion-select-option>
+      <ion-select-option value="RU_Vaurouze">RU Vaurouze</ion-select-option>
+      <ion-select-option value="CampusRibay">tram Campus Ribay</ion-select-option>
+      <ion-select-option value="Universite">tram  Universite</ion-select-option>
+    </ion-select>
+  </ion-item>
 </ion-content>
