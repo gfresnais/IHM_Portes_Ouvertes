@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -35,7 +36,7 @@ export class RenseignementPage {
     },
   ]
 
-  constructor() {  }
+  constructor(public alertController: AlertController) {  }
 
   expandItem(info): void {
     if (info.expanded) {
@@ -43,6 +44,18 @@ export class RenseignementPage {
     } else {
       info.expanded = true;
     }
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: "Un élève arrive vous aider!",
+      subHeader: "Temps estimé :  7 minutes",
+      message: "Nom de l''élève : Théo Guidon",
+    });
+  
+    await alert.present();
+    let result = await alert.onDidDismiss();
+    console.log(result);
   }
 }
 
