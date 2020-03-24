@@ -23,7 +23,7 @@ export class RenseignementPage {
       lien4: "http://ensim.univ-lemans.fr/_resources/Depliant_%2520Khagne_%2520BL.pdf?download=true",
     },
     {
-      titre: "satistiques",
+      titre: "Statistiques",
       expendable: false,
       st1: "Débouchées",
       lien1: "http://ensim.univ-lemans.fr/fr/espace-entreprises/insertion-professionnelle.html",
