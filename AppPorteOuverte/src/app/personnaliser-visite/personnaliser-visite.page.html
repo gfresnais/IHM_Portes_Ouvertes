@@ -79,7 +79,8 @@
   <div class="maVisite">
     <ion-card *ngFor="let item of tabAtelier">
       <div class="contenu-card">
-          <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
+          <ion-button size="small" color="success" slot="end" 
+            class="button-supprimer" (click)="removeVisit(item.title)">
               Supprimer
           </ion-button>
           
@@ -89,31 +90,6 @@
       </div>
     </ion-card>
   </div>
-      <!-- <ion-card>
-  <div class="contenu-card">
-    <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
-      Supprimer
-    </ion-button>
-    <p class="Atelier-title">Atelier 2</p>
-    <p class="Atelier-emplacem">Rez-de-chaussée</p>
-    <p class="Atelier-descrip">Présentation de l’école et du protocole d’admission</p>
-
-  </div>
-      </ion-card>
-    <ion-card>
-  <div class="contenu-card">
-    <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
-      Supprimer
-    </ion-button>
-    <p class="Atelier-title">Atelier 4</p>
-    <p class="Atelier-emplacem">1er étage</p>
-    <p class="Atelier-descrip">Présentation des projets de deuxième année</p>
-
-  </div>
-    </ion-card>
-  </div> -->
-
-  <!-- <app-block-card *ngFor="let block of blocks" [blockData]="block"></app-block-card> -->
 
   <br><br><br>
   <div id="Valider_personnaliser_visite">
