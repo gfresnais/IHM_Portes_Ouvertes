@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { info, cate } from './info';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-faq',
@@ -27,7 +28,19 @@ export class FAQPage implements OnInit {
     {question : "Lorem ipsum dolor sit amet ?",reponse: "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",categorie: "Autre"}
   ]
 
-  constructor() { }
+  constructor(public alertController: AlertController) { }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: "Un élève arrive vous aider!",
+      subHeader: "Temps estimé :  7 minutes",
+      message: "Nom de l''élève : Théo Guidon",
+    });
+    
+    await alert.present();
+    let result = await alert.onDidDismiss();
+    console.log(result);
+  }
 
   ngOnInit() {
   }
