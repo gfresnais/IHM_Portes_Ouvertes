@@ -30,7 +30,7 @@
     "cordova-plugin-geolocation": "^4.0.2",
     "core-js": "^2.5.4",
     "ionic-select-searchable": "^2.10.0",
-    "ionic-selectable": "^4.5.0",
+    "ionic-selectable": "^4.7.1",
     "leaflet": "^1.6.0",
     "leaflet-routing-machine": "^3.2.12",
     "rxjs": "~6.5.1",
