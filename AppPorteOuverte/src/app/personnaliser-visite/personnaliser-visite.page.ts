@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AtelierCard } from './Atelier-Card';
 
 @Component({
   selector: 'app-personnaliser-visite',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personnaliser-visite.page.scss'],
 })
 export class PersonnaliserVisitePage implements OnInit {
-
+  TabAtelier: AtelierCard[];
 
 
   constructor() {}
@@ -15,5 +15,7 @@ export class PersonnaliserVisitePage implements OnInit {
   ngOnInit() {
   }
 
+  addVisit(numAtelier : int) {
+    
 
 }

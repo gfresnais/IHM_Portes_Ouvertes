@@ -27,7 +27,7 @@
           des différents niveaux sur l’intelligence artificielle.
         </ion-card-content>
 
-        <ion-button>Ajouter à la visite</ion-button>
+        <ion-button (click)="addVisit(1)">Ajouter à la visite</ion-button>
         <br><br>
       </ion-card>
     </ion-slide>
@@ -48,7 +48,7 @@
           <br><br>
         </ion-card-content>
 
-        <ion-button>Ajouter à la visite</ion-button>
+        <ion-button (click)="addVisit(2)">Ajouter à la visite</ion-button>
         <br><br>
       </ion-card>
     </ion-slide>
@@ -68,7 +68,7 @@
           <br><br><br>
         </ion-card-content>
 
-        <ion-button>Ajouter à la visite</ion-button>
+        <ion-button (click)="addVisit(3)">Ajouter à la visite</ion-button>
         <br><br>
       </ion-card>
     </ion-slide>
@@ -112,6 +112,7 @@
     </ion-card>
   </div>
 
+  <app-block-card *ngFor="let block of blocks" [blockData]="block"></app-block-card>
 
   <br><br><br>
   <div id="Valider_personnaliser_visite">
