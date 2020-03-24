@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-valider-visite',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValiderVisitePage implements OnInit {
 
-  constructor() { }
+  id: string;
+
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    // Set id value to a get parameter from a route
+    this.id = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
 }
