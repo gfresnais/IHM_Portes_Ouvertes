@@ -39,9 +39,6 @@ loadChildren: () => import('./choix-guide/choix-guide.module').then( m => m.Choi
   {
     path: 'pickup-location',
     loadChildren: () => import('./pickup-location/pickup-location.module').then( m => m.PickupLocationPageModule)
-  },  {
-    path: 'atelier-card',
-    loadChildren: () => import('./atelier-card/atelier-card.module').then( m => m.AtelierCardPageModule)
   },
 
 

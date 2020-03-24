@@ -77,18 +77,19 @@
 
   <h4>  Ma visite </h4>
   <div class="maVisite">
-    <ion-card>
-  <div class="contenu-card">
-      <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
-          Supprimer
-      </ion-button>
-        <p class="Atelier-title">Atelier 1</p>
-        <p class="Atelier-emplacem">1er étage</p>
-        <p class="Atelier-descrip">Présentation des projets de réalité virtuelle</p>
-
-  </div>
+    <ion-card *ngFor="let item of tabAtelier">
+      <div class="contenu-card">
+          <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
+              Supprimer
+          </ion-button>
+          
+          <p class="Atelier-title">{{item.title}}</p>
+          <p class="Atelier-emplacem">{{item.emp}}</p>
+          <p class="Atelier-descrip">{{item.desc}}</p>
+      </div>
     </ion-card>
-      <ion-card>
+  </div>
+      <!-- <ion-card>
   <div class="contenu-card">
     <ion-button size="small" color="success" slot="end"  class="button-supprimer" >
       Supprimer
@@ -110,12 +111,12 @@
 
   </div>
     </ion-card>
-  </div>
+  </div> -->
 
-  <app-block-card *ngFor="let block of blocks" [blockData]="block"></app-block-card>
+  <!-- <app-block-card *ngFor="let block of blocks" [blockData]="block"></app-block-card> -->
 
   <br><br><br>
   <div id="Valider_personnaliser_visite">
-  <ion-button  [routerLink]="['/choix-guide']">Valider</ion-button>
+    <ion-button  [routerLink]="['/choix-guide']">Valider</ion-button>
   </div>
 </ion-content>
